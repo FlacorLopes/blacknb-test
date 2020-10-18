@@ -23,23 +23,25 @@ export default function MainSection() {
 
   useEffect(() => {
     if (companyName !== null) return;
-    axios.get('http://localhost:1337/companies/2').then((response) => {
-      const { data } = response;
+    axios
+      .get('https://blacknb-strapi.herokuapp.com/companies/1')
+      .then((response) => {
+        const { data } = response;
 
-      setcompanyName(data.name);
-      setCompanyAbout(data.about);
-      setCompanyRating(data.rating);
-      setReviews(data.user_reviews);
-      setCompanyAbout(data.about);
-      setPhone(data.phone);
-      setSite(data.site);
-      setAddress(data.address);
-      setFaq(data.faqs);
-      setPictures(data.pictures);
-      setLoading(false);
+        setcompanyName(data.name);
+        setCompanyAbout(data.about);
+        setCompanyRating(data.rating);
+        setReviews(data.user_reviews);
+        setCompanyAbout(data.about);
+        setPhone(data.phone);
+        setSite(data.site);
+        setAddress(data.address);
+        setFaq(data.faqs);
+        setPictures(data.pictures);
+        setLoading(false);
 
-      console.log(response.data);
-    });
+        console.log(response.data);
+      });
   }, []);
 
   return (
