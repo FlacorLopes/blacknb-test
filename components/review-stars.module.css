@@ -1,0 +1,9 @@
+.stars {
+  display: flex;
+  align-items: baseline;
+  flex-direction: row;
+}
+
+.stars > :not(:last-child) {
+  margin-right: 0.7rem;
+}

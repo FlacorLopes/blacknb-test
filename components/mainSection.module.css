@@ -1,0 +1,268 @@
+.mainSection {
+  padding: 3rem 2rem 10rem;
+}
+
+.baseStyle {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  color: unset;
+  padding: 0px;
+  text-align: unset;
+  margin: unset;
+}
+
+.header > :not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+.header .btnBack {
+  width: max-content;
+  padding: 0.75rem 0px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  font-weight: bold;
+  font-size: 12px;
+  text-decoration: underline;
+  overflow-wrap: break-word;
+  background-color: rgb(255, 255, 255);
+  color: rgb(43, 43, 43);
+  filter: none;
+  cursor: pointer;
+}
+
+.companyNavbar {
+  border-bottom: 0.5px solid rgb(191, 133, 20);
+}
+
+.companySections {
+  display: flex;
+  -webkit-box-align: unset;
+  align-items: unset;
+  flex-direction: row;
+  width: auto;
+  overflow-x: auto;
+}
+
+.companyAbout {
+  background: unset;
+  border-top: unset;
+  border-right: unset;
+  border-left: unset;
+  border-image: unset;
+  padding: 1rem;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  color: rgb(191, 133, 20);
+  opacity: 1;
+  filter: none;
+  border-bottom: 1px solid rgb(191, 133, 20);
+}
+
+.mainContainer > :not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.companyHeading {
+  background: unset;
+  border-top: unset;
+  border-right: unset;
+  border-left: unset;
+  border-image: unset;
+  padding: 1rem;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  color: rgb(191, 133, 20);
+  opacity: 0.5;
+  filter: saturate(0.25);
+  border-bottom: none;
+}
+
+.companyHeading .headingContainer {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  flex-direction: row;
+  width: auto;
+}
+
+.headingContainer > :not(:last-child) {
+  margin: 0px 0.5rem 0px 0px;
+}
+
+.headingContainer .badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.15rem;
+  height: 1.15rem;
+  padding: 10px;
+  border-radius: 50%;
+  background: rgb(191, 133, 20);
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.mainSection .gridSection {
+  display: grid;
+  gap: 2rem;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 600px) {
+  .gridSection {
+    grid-template-columns: 5fr 6fr;
+  }
+}
+
+.leftSection > :not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.gridSection .figureContainer {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.figureContainer button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  padding: 0px;
+}
+
+.figureContainer .figureBg {
+  width: 100%;
+  border-radius: 5px;
+  display: block;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 4px;
+}
+
+.figureContainer .thumbnailsContainer {
+  padding: 1rem;
+}
+
+.figureContainer .thumbnails {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0px;
+}
+
+.figureContainer .thumbnails > :not(:last-child) {
+  margin-right: 1rem;
+}
+
+.figureContainer .thumbnails img {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 5px;
+  object-fit: cover;
+  cursor: pointer;
+  overflow: hidden;
+  opacity: 1;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 4px;
+}
+
+.companyReview > :not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.reviewCompany {
+  width: max-content;
+  padding: 0.75rem 0px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  font-weight: bold;
+  font-size: 14px;
+  text-decoration: underline;
+  overflow-wrap: break-word;
+  background-color: rgb(255, 255, 255);
+  color: rgb(191, 133, 20);
+  filter: none;
+  cursor: pointer;
+}
+
+.mainContainer .rightSection > :not(:last-child) {
+  margin-bottom: 3rem;
+}
+
+.rightSection .rightWrapper > :not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.companyDescription {
+  max-width: 500px;
+}
+
+.companyDescription > :not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.companyContact > :not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.companyOpening {
+  max-width: 250px;
+}
+.companyOpening > :not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.companyOpening div {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.companyAddress > :not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.companyQuestions div {
+  max-width: 500px;
+  display: flex;
+}
+
+.companyQuestions div > :not(:last-child) {
+  margin-right: 1rem;
+}
+
+.companyQuestions p > :not(:last-child) {
+  margin-right: 1rem;
+}
+.companyQuestions input {
+  display: inline-block;
+  border: 0.5px solid rgb(59, 46, 29);
+  border-radius: 5px;
+  outline: none;
+  height: 40px;
+  font-family: Montserrat;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.75rem;
+}
+
+.sendButton {
+  width: max-content;
+  padding: 0.75rem 1.75rem;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  font-weight: bold;
+  font-size: 14px;
+  text-decoration: none;
+  overflow-wrap: break-word;
+  background-color: rgb(59, 46, 29);
+  color: rgb(255, 255, 255);
+  filter: none;
+  cursor: pointer;
+}
